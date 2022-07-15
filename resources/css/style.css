@@ -1,7 +1,7 @@
 /* Universal Styles */
-/* *{
-  border: 1px solid red;
-} */
+*{
+  box-sizing: border-box;
+}
 
 html {
   font-family: "Roboto", sans-serif;
@@ -28,7 +28,8 @@ html {
 }
 
 .image-container img {
-  display: block;
+  width: 90%;
+  height: 65%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -241,12 +242,15 @@ header .mobile {
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
+  height: 635px;
+  overflow: hidden;
 }
 
 .feature .image-container {
-  width: 90%;
+  /* width: 90%; */
   height: 65%;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .feature h2 {
@@ -254,6 +258,9 @@ header .mobile {
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
+  line-height: 1.2;
+  margin-bottom: 0;
+  margin-top: 2.5rem;
 }
 
 .feature h3 {
@@ -261,6 +268,7 @@ header .mobile {
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
+  margin-top: 0;
 }
 
 @media only screen and (max-width: 890px) {
